@@ -170,7 +170,7 @@ export default function App() {
   }, [stats]);
 
   function updateStat(s: Stat) {
-    setStats((prev) => prev.map((x) => (x.id === s.id ? s : x)));
+    setStats((prev) => prev.map((x: Stat) => (x.id === s.id ? s : x)));
   }
 
   function tryLogin() {
